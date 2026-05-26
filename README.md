@@ -1,4 +1,4 @@
-# <img src="./src/assets/logo-certa.png" width="50" align="center" /> Plataforma de Cursos Online
+# <img src="./src/assets/logo-certa.png" width="60" /> Plataforma de Cursos Online
 Este projeto consiste no desenvolvimento front-end de uma plataforma de cursos utilizando **React**, implementando as interfaces disponibilizados no Figma.
 
 ## 📝 Padrão de Commits
