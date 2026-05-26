@@ -1,16 +1,60 @@
-# React + Vite
+# <img src="./src/assets/logo-certa.png" width="50" align="center" /> Plataforma de Cursos Online
+Este projeto consiste no desenvolvimento front-end de uma plataforma de cursos utilizando **React**, implementando as interfaces disponibilizados no Figma.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Padrão de Commits
+-----------------------------------
+- `create`: criação inicial do projeto
+- `feat`: nova funcionalidade
+- `fix`: correção de bug
+- `docs`: alterações na documentação
+- `style`: ajustes visuais
+- `chore`: pequenos ajustes
 
-Currently, two official plugins are available:
+## 🌿 Padrão de Branches
+-----------------------------------
+- `main`
+Branch estável, versão oficial do sistema.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- `dev`
+Branch de desenvolvimento, onde novas funções são integradas.
 
-## React Compiler
+> 📌 Todas as novas funções e correções são feitas diretamente na branch `dev`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧰 Tecnologias Utilizadas
+-----------------------------------
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **React**
+- **Vite**
+- **Node.js**
+- **npm**
 
-## Expanding the ESLint configuration
+## 🛠️ Pré-requisitos
+-----------------------------------
+- **Node.js 20+**
+- **npm**
+- **Git**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Instalação e Execução
+-----------------------------------
+1. Clone o repositório (utilizando ssh):
+```
+git clone git@github.com:Clarisse-Pimentel/Projeto-Trainee_Emakers-26-1.git
+```
+2. Entrar na pasta do projeto:
+```
+cd Projeto-Trainee_Emakers-26/1
+```
+3. Instalar as dependências:
+```
+npm install
+```
+4. Executar o projeto:
+```
+npm run dev
+```
+5. Abrir no navegador:
+```
+http://localhost:5173
+```
