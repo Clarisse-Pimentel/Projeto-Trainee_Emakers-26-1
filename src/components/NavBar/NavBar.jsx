@@ -1,10 +1,13 @@
 import style from "./NavBar.module.css";
+import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/logo-plataforma.png";
 import Search from "../../assets/search.png"
 import Shop from "../../assets/shop.png";
 import User from "../../assets/user.png";
 
 const NavBar = () => {
+  const navigate = useNavigate()
+  
   return (
     <nav className={style.container}>
         <img className={style.logo} src={Logo} alt="" />
@@ -15,7 +18,7 @@ const NavBar = () => {
               Pesquisar por qualquer coisa
             </div>
             <img className={style.shop} src={Shop} alt="" />
-            <button>
+            <button onClick={() => navigate("/login")}>
               <img src={User} alt="" />
             </button>
           </div>

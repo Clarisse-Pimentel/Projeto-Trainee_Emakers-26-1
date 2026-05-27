@@ -1,5 +1,5 @@
-import Gif from "../../assets/principal.gif"
-import style from "./FirstSection.module.css";
+import Gif from "../../../assets/principal.gif"
+import style from "./BannerHome.module.css";
 
 const ImageSection = () => {
   return (

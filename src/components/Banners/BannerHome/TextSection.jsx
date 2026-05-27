@@ -1,4 +1,4 @@
-import style from "./FirstSection.module.css";
+import style from "./BannerHome.module.css";
 
 const TextSection = () => {
   return (

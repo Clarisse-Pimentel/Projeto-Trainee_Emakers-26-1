@@ -1,5 +1,5 @@
-import SearchBar from "../../assets/search.png";
-import style from "./FirstSection.module.css";
+import SearchBar from "../../../assets/search.png";
+import style from "./BannerHome.module.css";
 
 const SearchSection = () => {
   return (

@@ -1,5 +1,5 @@
-import CookieImage from "../../assets/cookie.png";
-import style from "./FirstSection.module.css";
+import CookieImage from "../../../assets/cookie.png";
+import style from "./BannerHome.module.css";
 
 const Cookie = () => {
   return (

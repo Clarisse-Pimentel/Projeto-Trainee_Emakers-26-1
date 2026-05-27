@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
-
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 60px;
     flex-direction: row;
     background-color: #653654;
+    height: 60px;
     padding: 10px 5%;
     z-index: 9;
 }
 
 .logo {
     width: 100px;
-    height: 50px;   
+    height: 50px;
 }
 
 .title {
@@ -23,14 +21,11 @@
     font-family: "Arimo", sans-serif;
     font-weight: 400;
     font-size: 18px;
+    -webkit-text-stroke: 0.5px #ffffff;
     align-items: center;
-    line-height: 156%;
-    letter-spacing: 28%;
+    line-height: 1.5;
+    letter-spacing: 0.28em;
     position: relative;
-
-    @media(max-width:800px) {
-        display: none;
-    }
 }
 
 .rightSide {
@@ -49,9 +44,6 @@
     padding: 5px 10px;
     border: 1px solid #67103A;
     border-radius: 50px;
-    @media(max-width:800px) {
-        display: none;
-    }
 }
 
 .search {
@@ -74,9 +66,6 @@ button {
     border: 1px solid #FEE9F3;
     width: 30px;
     height: 30px;
-    @media(max-width:800px) {
-        display: none;
-    }
 }
 
 button img {
@@ -85,11 +74,19 @@ button img {
 }
 
 
-@media (max-width: 800px) {
+@media(max-width: 800px) {
     .logo {
         margin-left: auto;
         margin-right: auto;
         display: block;
     }
-
+    .title {
+        display: none;
+    }
+    .content {
+        display: none;
+    }
+    button {
+        display: none;
+    }
 }
