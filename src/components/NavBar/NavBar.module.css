@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    background-color: #653654;
+    padding: 10px 5%;
+    z-index: 9;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;   
+}
+
+.title {
+    display: flex;
+    color: #ffffff;
+    font-family: "Arimo", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    align-items: center;
+    line-height: 156%;
+    letter-spacing: 28%;
+    position: relative;
+
+    @media(max-width:800px) {
+        display: none;
+    }
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #FEE9F3;
+    padding: 5px 10px;
+    border: 1px solid #67103A;
+    border-radius: 50px;
+    @media(max-width:800px) {
+        display: none;
+    }
+}
+
+.search {
+    width: 20px;
+    height: 20px;
+}
+
+.shop { 
+    width: 24px;
+    height: 24px;
+     
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEE9F3;
+    border-radius: 20px;
+    border: 1px solid #FEE9F3;
+    width: 30px;
+    height: 30px;
+    @media(max-width:800px) {
+        display: none;
+    }
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (max-width: 800px) {
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+}
