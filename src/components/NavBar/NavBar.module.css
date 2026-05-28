@@ -1,4 +1,4 @@
-.container {
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,6 +8,10 @@
     height: 60px;
     padding: 10px 5%;
     z-index: 9;
+}
+
+.menu {
+    display: none;
 }
 
 .logo {
@@ -76,9 +80,9 @@ button img {
 
 @media(max-width: 800px) {
     .logo {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .title {
         display: none;
@@ -88,5 +92,32 @@ button img {
     }
     button {
         display: none;
+    }
+    .menu {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #653654;
+        z-index: 10;
+    }
+    .container nav {
+        display: block;
+    }
+    .container, 
+    .menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .container .menu .title {
+        display: block;
+        align-items: center;
     }
 }
