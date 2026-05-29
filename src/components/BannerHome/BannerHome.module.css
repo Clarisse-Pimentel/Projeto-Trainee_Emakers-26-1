@@ -125,50 +125,49 @@
     line-height: 20px;
 }
 
-.accept {
-    display: flex;
-    align-items: center;
-    width: 56px;
-    height: 30px;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    font-style: bold;
-    color: #67103A;
-    line-height: 20px;
-    letter-spacing: 0%;
-    background-color: #ffffff;
-    border: 2px solid #67103A;
-    border-radius: 6px;
-    padding-top: 5px;
-    padding-right: 18px;
-    padding-bottom: 5px;
-    padding-left: 18px;
-    gap: 10px;
-}
-
+.accept,
 .reject {
     display: flex;
     align-items: center;
-    width: 80px;
-    height: 30px;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     font-weight: 600;
     font-style: bold;
-    color: #ffffff;
     line-height: 20px;
     letter-spacing: 0%;
-    background-color: #67103A;
-    border: 2px solid #ffffff;
     border-radius: 6px;
     padding-top: 5px;
     padding-right: 18px;
     padding-bottom: 5px;
     padding-left: 18px;
     gap: 10px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
+.accept {
+    width: 56px;
+    height: 30px;
+    color: #67103A;
+    background-color: #ffffff;
+    border: 2px solid #67103A;
+}
+
+.reject {
+    width: 80px;
+    height: 30px;
+    color: #ffffff;
+    background-color: #67103A;
+    border: 2px solid #ffffff;
+}
+
+.accept:hover {
+    opacity: 0.85;
+}
+
+.reject:hover {
+    opacity: 0.85;
+}
 
 .contato {
     display: flex;
@@ -177,17 +176,23 @@
     position: absolute;
     top: calc(59.2vh + 10px);
     right: clamp(0px, 12vw, 40px);
-    width: 50px;
-    height: 50px;
+    width: 56px;
+    height: 56px;
     background: #67103A;
     border: 1px solid #67103A;
-    border-radius: 40px;
+    border-radius: 50%;
     z-index: 2;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .contact {
     width: 26px;
     height: 26px;
+}
+
+.contato:hover {
+    opacity: 0.9;
 }
 
 .fakeFooter {
@@ -250,5 +255,18 @@
 @media (min-width: 1400px) {
     .content {
         transform: translateX(300px);
+    }
+}
+
+@media (min-width: 1400px) {
+    .content {
+        margin-top: clamp(60px, 6vw, 120px);
+    }
+}
+
+@media (min-width: 1400px) {
+    .content {
+        max-width: clamp(630px, 42vw, 850px);
+        gap: clamp(15px, 1.5vw, 28px);
     }
 }

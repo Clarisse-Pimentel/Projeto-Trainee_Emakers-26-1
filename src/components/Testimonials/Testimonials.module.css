@@ -1,0 +1,114 @@
+.fakeNavbar {
+  color: #ffffff;
+  font-family: "Arimo", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  background-color: #653654;
+  width: 100%;
+  padding: 14px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  padding: 40px 0 0;
+  background-color: #F0E1EB;
+}
+
+.heading {
+  font-family: "Arimo", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #67103a;
+  margin-bottom: 12px;
+  padding: 0 5%;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #67103A;
+  margin: 0 5% 0;
+}
+
+.people {
+  width: 100%;
+  padding: 40px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  flex: 1;
+  min-height: 150px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #67103A;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.aspas {
+  font-family: "nyx-std", sans-serif;
+  font-size: 96px;
+  color: #67103a;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.texto {
+  font-size: 13px;
+  color: #374957;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+  text-align: justify;
+}
+
+.autor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.foto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nome {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374957;
+}
+
+.cargo {
+  font-size: 11px;
+  color: #374957;
+}
+
+@media (max-width: 800px) {
+  .list {
+    flex-direction: column;
+  }
+}

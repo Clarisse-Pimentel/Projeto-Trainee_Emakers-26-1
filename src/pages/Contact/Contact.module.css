@@ -1,0 +1,128 @@
+.page {
+  background-color: #FEF2FA;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: 40px 5%;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #67103A;
+  margin: 0 0 24px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #67103A;
+  border-radius: 6px;
+  padding: 12px 16px;
+  background-color: #fff;
+  margin-bottom: 12px;
+}
+
+.search {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #444;
+  width: 100%;
+  background: transparent;
+  font-family: inherit;
+}
+
+.searchInput::placeholder {
+  color: #374954;
+  opacity: 0.5;
+}
+
+.popular {
+  font-size: 13px;
+  color:  #67103A;
+  margin-bottom: 32px;
+}
+
+.popularLabel {
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #67103A;
+  margin: 0 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #d0a0b8;
+  border-radius: 8px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  align-self: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.list li::before {
+  content: "• ";
+  color: #67103A;
+}
+
+.list span {
+  font-size: 13px;
+  color: #67103A;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .main {
+    padding: 24px 5%;
+  }
+}

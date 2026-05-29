@@ -1,4 +1,4 @@
-import Gif from "../../../assets/principal.gif"
+import Gif from "../../assets/principal.gif"
 import style from "./BannerHome.module.css";
 
 const ImageSection = () => {

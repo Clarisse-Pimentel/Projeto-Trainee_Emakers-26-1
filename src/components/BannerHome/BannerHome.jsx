@@ -1,13 +1,13 @@
 import style from "./BannerHome.module.css";
 import { useNavigate } from "react-router-dom";
-import Contact from "../../../assets/contact.png"
+import Contact from "../../assets/contact.png"
 import TextSection from "./TextSection.jsx";
 import SearchSection from "./SearchSection.jsx";
 import ImageSection from "./ImageSection.jsx";
 import Footer from "./Footer.jsx";
 import Cookie from "./Cookie.jsx";
 
-const FirstSection = () => {
+const BannerHome = () => {
   const navigate = useNavigate();
 
   return (
@@ -26,4 +26,4 @@ const FirstSection = () => {
   )
 }
 
-export default FirstSection
+export default BannerHome

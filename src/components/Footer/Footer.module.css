@@ -1,0 +1,85 @@
+.footer {
+  background-color: #fee9f3;
+  border-top: 1px solid #67103A;
+  padding: 30px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+  color: #67103A;
+}
+
+.left a {
+  font-size: 16px;
+  color: #67103A;
+  text-decoration: none;  
+  cursor: default;        
+}
+
+.left button {
+  font-size: 16px;
+  color: #67103A;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;       
+  padding: 0;
+  text-align: left;
+  font-family: inherit;
+  white-space: nowrap;
+  display: block;
+  margin: 0;
+}
+
+.left button:hover {
+  text-decoration: underline;
+  color: #67103a;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;  
+  gap: 4px;
+  align-self: stretch;      
+}
+
+.brand {
+  font-family: "Arimo", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #67103A;
+  margin: 0;
+}
+
+.slogan {
+  font-size: 14px;
+  color: #67103a;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right {
+    align-items: center;
+    justify-content: center;
+    align-self: auto;
+  }
+}
