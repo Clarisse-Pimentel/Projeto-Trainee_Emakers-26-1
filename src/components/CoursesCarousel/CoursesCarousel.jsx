@@ -26,10 +26,8 @@ const courses = [
     route: "/curso/design",
   },
 ];
-
 const CoursesCarousel = () => {
   const [current, setCurrent] = useState(0);
-
   const prev = () => setCurrent((c) => (c === 0 ? courses.length - 1 : c - 1));
   const next = () => setCurrent((c) => (c === courses.length - 1 ? 0 : c + 1));
 
@@ -38,13 +36,13 @@ const CoursesCarousel = () => {
       <p className={style.subtitle}>Tudo o que você precisa, exatamente onde você precisa.</p>
       <h2 className={style.heading}>Conheça nossos cursos</h2>
       <div className={style.track}>
-        <button className={style.btn}>‹</button>
-          <div className={style.grid}>
+        <button className={style.btn} onClick={prev}>‹</button>
+        <div className={style.grid}>
           {courses.map((course, index) => (
-          <CourseCard key={index} {...course} />
+            <CourseCard key={index} {...course} />
           ))}
-          </div>
-        <button className={style.btn}>›</button>
+        </div>
+        <button className={style.btn} onClick={next}>›</button>
       </div>
       <div className={style.slider}>
         <button className={style.btn} onClick={prev}>‹</button>

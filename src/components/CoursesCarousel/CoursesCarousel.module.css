@@ -105,18 +105,16 @@
 }
 
 @media (max-width: 800px) {
-  .desktopWrapper {
+  .grid {
     display: none;
   }
 
-  .mobileWrapper {
+   .track {
+    display: none;
+  }
+  .slider {
     display: flex;
   }
-
-  .track::before {
-    display: none;
-  }
-
   .subtitle {
     font-size: 16px;
   }

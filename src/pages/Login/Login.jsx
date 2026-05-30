@@ -60,7 +60,7 @@ const Login = () => {
         <button type="button" className={style.forgot} onClick={() => navigate("/forgotPassword")}>
           Esqueceu a senha?
         </button>
-        <button onClick={() => navigate("/")} className={style.enter}>
+        <button type="submit" className={style.enter}>
           Entrar
         </button>
       </form>
